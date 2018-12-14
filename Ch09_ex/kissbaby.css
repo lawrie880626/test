@@ -1,0 +1,29 @@
+@charset "utf-8";
+/* CSS Document */
+
+img {
+	width: 100%;
+	height: auto;
+}
+p {
+	font-size: 14px;
+	color: #333;
+}
+h3 {
+	font-size: 14px;
+	color: #39F;
+}
+li {
+	font-size: 14px;
+	color: #F39;
+	list-style-image: url(images/heart.gif);
+	margin-bottom: 10px;
+}
+h4 {
+	color: #F39;
+	font-size: 10px;
+	font-weight: normal;
+}
+label {
+	color: #F39;
+}
