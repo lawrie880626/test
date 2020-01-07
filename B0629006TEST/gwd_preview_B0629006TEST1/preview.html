@@ -1,0 +1,34 @@
+<html><head>
+    <!--
+    Load various Web Components polyfills required by IE and Edge. While the polyfills are
+    not needed for other browsers, they're loaded irrespective of browser features because we rely
+    on the polyfill's `WebComponentsReady` event as a signal that the app is ready to be initialized
+    (see init.js).
+    -->
+    <!-- Polyfill Web Components. -->
+    <script src="webcomponentsjs/webcomponents-lite.js"></script>
+
+    <!-- Polyfill Web Animations. This file is necessary for some paper elements. -->
+    <script src="webcomponentsjs/web-animations-next-lite.min.js"></script>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Roboto:regular">
+
+    <script src="preview_polymer.js"></script>
+
+    <style>
+      body {
+        margin: 0;
+      }
+
+      tf-creative-preview {
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+  <script>window.gwdPreview = {"config":{"previewPath":"index.html","modes":["single"],"sizes":["480x800"],"breakpoints":null,"feeds":{},"feedNames":[],"reloadOnResize":false,"defaults":{"mode":"single","modeSettings":{"single":{"size":"480x800","feed":null}}}},"strings":{"MSG_ALL_FEEDS_MODE":"\u6240\u6709\u6a23\u672c\u8cc7\u6599","MSG_ALL_SIZES_MODE":"\u6240\u6709\u5927\u5c0f","MSG_CUSTOM":"\u81ea\u8a02","MSG_CUSTOM_SIZE":"\u81ea\u8a02\u5927\u5c0f","MSG_DESKTOP_MODE":"\u684c\u4e0a\u578b\u96fb\u8166","MSG_DEVICE":"\u88dd\u7f6e","MSG_MOBILE_MODE":"\u624b\u6a5f","MSG_NO_SAMPLE_DATA":"\u6c92\u6709\u6a23\u672c\u8cc7\u6599","MSG_NO_SAMPLE_DATA_TO_PREVIEW":"\u9078\u53d6\u8981\u9810\u89bd\u7684\u6a23\u672c\u8cc7\u6599\u3002","MSG_NO_SIZES_TO_PREVIEW":"\u9078\u53d6\u8981\u9810\u89bd\u7684\u5c3a\u5bf8\u3002","MSG_NONE_SELECTED":"\u672a\u9078\u53d6","MSG_PARALLAX_MODE":"\u8996\u5dee","MSG_PREVIEW_MODE":"\u9810\u89bd\u6a21\u5f0f","MSG_RELOAD":"\u91cd\u65b0\u8f09\u5165","MSG_RELOAD_ALL":"\u5168\u90e8\u91cd\u65b0\u8f09\u5165","MSG_ROTATE_DEVICE":"\u65cb\u8f49\u88dd\u7f6e\u65b9\u5411","MSG_SAMPLE_FEED":"\u7bc4\u4f8b\u8cc7\u6599","MSG_SAMPLE_FEEDS":"\u7bc4\u4f8b\u8cc7\u6599","MSG_SELECT_ALL":"\u9078\u53d6\u5168\u90e8","MSG_SELECT_NONE":"\u5168\u90e8\u4e0d\u9078","MSG_SELECTED":"\u5df2\u9078\u53d6 {num} \u500b\u9805\u76ee","MSG_SHOW_SIZE":"\u986f\u793a\u55ae\u4e00\u5927\u5c0f","MSG_SHOW_SIZES":"\u986f\u793a\u591a\u7a2e\u5927\u5c0f","MSG_SINGLE_MODE":"\u55ae\u4e00\u5927\u5c0f","MSG_VIEWPORT_SIZE":"\u53ef\u8996\u5340\u57df\u5927\u5c0f"}};</script></head>
+
+  <body>
+    <tf-creative-preview id="preview-app"></tf-creative-preview>
+  
+
+</body></html>
